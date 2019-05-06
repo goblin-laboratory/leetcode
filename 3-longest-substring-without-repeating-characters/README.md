@@ -30,6 +30,24 @@ https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
 ```
 
 ## 说明：
-* v1：暴力接法
-* v2：滑动窗口
-* v3：滑动窗口递归实现
+
+### v1：暴力接法
+
+```
+执行用时 : 1040 ms, 在Longest Substring Without Repeating Characters的JavaScript提交中击败了7.58% 的用户
+内存消耗 : 85.9 MB, 在Longest Substring Without Repeating Characters的JavaScript提交中击败了5.02% 的用户
+```
+
+### v2：滑动窗口
+
+```
+执行用时 : 128 ms, 在Longest Substring Without Repeating Characters的JavaScript提交中击败了98.17% 的用户
+内存消耗 : 37.8 MB, 在Longest Substring Without Repeating Characters的JavaScript提交中击败了85.21% 的用户
+```
+
+### v3：滑动窗口递归实现
+
+```
+执行出错：986 / 987 个通过测试用例
+执行出错信息：Line 9: RangeError: Maximum call stack size exceeded
+```
