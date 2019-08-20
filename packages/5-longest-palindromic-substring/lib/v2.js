@@ -8,10 +8,13 @@ var longestPalindrome = function(s) {
   for (let l = s.length; 0 < l; l--) {
     for (let i = 0; i < s.length - l + 1; i++) {
       const sub = s.substr(i, l);
-      const index = str.indexOf(sub);
-      if (-1 !== index && i === s.length - 1 - (index + l - 1)) {
+      if (sub === str.substr(s.length - 1 - (i + l - 1), l)) {
         return sub;
       }
+      // const index = str.indexOf(sub);
+      // if (-1 !== index && i === s.length - 1 - (index + l - 1)) {
+      //   return sub;
+      // }
     }
   }
   return '';
