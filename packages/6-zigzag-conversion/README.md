@@ -6,28 +6,35 @@ https://leetcode-cn.com/problems/zigzag-conversion/
 
 比如输入字符串为 "LEETCODEISHIRING"  行数为 3 时，排列如下：
 
-L C I R
+```
+L   C   I   R
 E T O E S I I G
-E D H N
+E   D   H   N
+```
+
 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如："LCIRETOESIIGEDHN"。
 
 请你实现这个将字符串进行指定行数变换的函数：
 
 string convert(string s, int numRows);
-示例  1:
+
+- 示例  1:
 
 输入: s = "LEETCODEISHIRING", numRows = 3
 输出: "LCIRETOESIIGEDHN"
-示例  2:
+
+- 示例  2:
 
 输入: s = "LEETCODEISHIRING", numRows = 4
 输出: "LDREOEIIECIHNTSG"
 解释:
 
-L D R
-E O E I I
-E C I H N
-T S G
+```
+L     D     R
+E   O E   I I
+E C   I H   N
+T     S     G
+```
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/zigzag-conversion
@@ -35,7 +42,5 @@ T S G
 
 ## v1
 
-```
-执行用时 : **132 ms**, 在所有 JavaScript 提交中击败了 **74.16%** 的用户
-内存消耗 : **38.9 MB**, 在所有 JavaScript 提交中击败了 **47.27%** 的用户
-```
+- 执行用时 : **132 ms**, 在所有 JavaScript 提交中击败了 **74.16%** 的用户
+- 内存消耗 : **38.9 MB**, 在所有 JavaScript 提交中击败了 **47.27%** 的用户
