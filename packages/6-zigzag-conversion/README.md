@@ -33,10 +33,7 @@ T S G
 链接：https://leetcode-cn.com/problems/zigzag-conversion
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-## Usage
+## v1
 
-```
-const 6ZigzagConversion = require('6-zigzag-conversion');
-
-// TODO: DEMONSTRATE API
-```
+> 执行用时 : 132 ms, 在所有 JavaScript 提交中击败了 74.16% 的用户
+> 内存消耗 : 38.9 MB, 在所有 JavaScript 提交中击败了 47.27% 的用户
