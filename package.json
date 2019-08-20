@@ -13,8 +13,10 @@
     "url": "git+https://github.com/goblin-laboratory/leetcode.git"
   },
   "scripts": {
+    "changelog": "lerna version --conventional-commits",
     "lint": "eslint --ext .js packages",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "bugs": {
     "url": "https://github.com/goblin-laboratory/leetcode/issues"
@@ -24,10 +26,20 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
     "lerna": "^3.16.4",
     "prettier": "^1.18.2",
     "react-scripts": "^3.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run jest"
+    }
   }
 }
