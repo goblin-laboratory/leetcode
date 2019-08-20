@@ -1,0 +1,33 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "xiaosong <kunkkaco@gmail.com>",
+  "homepage": "https://github.com/goblin-laboratory/leetcode#readme",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goblin-laboratory/leetcode.git"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js packages",
+    "test": "jest --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/goblin-laboratory/leetcode/issues"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "lerna": "^3.16.4",
+    "prettier": "^1.18.2",
+    "react-scripts": "^3.1.1"
+  }
+}

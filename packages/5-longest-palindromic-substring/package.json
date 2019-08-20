@@ -1,0 +1,27 @@
+{
+  "name": "5-longest-palindromic-substring",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "xiaosong <kunkkaco@gmail.com>",
+  "homepage": "https://github.com/goblin-laboratory/leetcode#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goblin-laboratory/leetcode.git"
+  },
+  "scripts": {
+    "test": "react-scripts test"
+  },
+  "bugs": {
+    "url": "https://github.com/goblin-laboratory/leetcode/issues"
+  },
+  "dependencies": {}
+}

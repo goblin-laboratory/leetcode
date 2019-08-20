@@ -25,3 +25,11 @@ https://leetcode-cn.com/problems/longest-palindromic-substring/
 执行用时 : 684 ms, 在Longest Palindromic Substring的JavaScript提交中击败了30.49% 的用户
 内存消耗 : 37.3 MB, 在Longest Palindromic Substring的JavaScript提交中击败了51.88% 的用户
 ```
+
+## Usage
+
+```
+const 5LongestPalindromicSubstring = require('5-longest-palindromic-substring');
+
+// TODO: DEMONSTRATE API
+```

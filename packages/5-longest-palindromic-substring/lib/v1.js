@@ -3,7 +3,7 @@
  * @return {string}
  */
 var longestPalindrome = function(s) {
-  for (let i = s.length; i > 0; i--) {
+  for (let i = s.length; 0 < i; i--) {
     for (let j = 0; j <= s.length - i; j++) {
       const sub = s.substr(j, i);
       if (isPalindrome(sub)) {
@@ -23,11 +23,4 @@ const isPalindrome = s => {
   return true;
 };
 
-(() => {
-  debugger;
-  const r1 = longestPalindrome('babad');
-  console.log('r1: %s', r1);
-  debugger;
-  const r2 = longestPalindrome('cbbd');
-  console.log('r2: %s', r2);
-})();
+module.exports = longestPalindrome;
