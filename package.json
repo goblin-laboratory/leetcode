@@ -16,6 +16,7 @@
     "changelog": "lerna version --conventional-commits",
     "lint": "eslint --ext .js packages",
     "test": "jest --watch",
+    "test:hooks": "jest",
     "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "bugs": {
@@ -39,7 +40,7 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run lint",
-      "pre-push": "npm run jest"
+      "pre-push": "npm run test:hooks"
     }
   }
 }
