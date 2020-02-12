@@ -1,5 +1,3 @@
-'use strict';
-
 const reverse = require('..');
 
 describe('7-reverse-integer', () => {
